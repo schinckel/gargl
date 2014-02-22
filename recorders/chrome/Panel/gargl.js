@@ -517,6 +517,12 @@
 							for(var i = 0; i < matches.length; i ++) {
 								matchString += (matches[i].innerHTML + "\n\n")
 							}
+              
+              matchString += "Value of matching form elements:\n\n"
+							for(var i = 0; i < matches.length; i ++) {
+								matchString += (matches[i].value + "\n\n")
+							}
+              
 
 							alert(matchString);
 						}
